@@ -1,6 +1,6 @@
 ## frontend-app-logistration
 This is a micro-frontend application responsible for the login, registration and password reset functionality. End modified for Tutor Open edX.
-This is an example plugin for to implement a micro-frontend application to Tutor Open edX. This example little bit different than this repository https://github.com/overhangio/tutor-gradebook but it works. Please test it before using in production !
+This is an example plugin for to implement a micro-frontend application to Tutor Open edX. This example a little bit different than this repository https://github.com/overhangio/tutor-gradebook but it works. Please test it before using in production !
 
 #### Cloning and configuring Frontend-app-logistration
 
@@ -60,3 +60,8 @@ To add new site go to the http://yourdomain.com/admin/sites/site/ and add new si
 
 
 After adding new page go to the http://yourdomain.com/admin/redirects/redirect/ and add new redirection for **login** page
+
+![](src/redirect.png)
+
+
+![](src/login.gif)
