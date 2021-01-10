@@ -1,0 +1,16 @@
+############# applogistration plugin
+
+applogistration:
+  image: {{ DOCKER_REGISTRY }}{{ APPLOGISTRATION_DOCKER_IMAGE }}
+
+  environment:
+    - NODE_ENV='development'      
+    
+  command:  ["npm", "run", "start", "--progress","--disable-host-check"]
+  ports:
+    - "1999:1999"
+      
+  restart: unless-stopped
+  depends_on:
+    - lms
+  

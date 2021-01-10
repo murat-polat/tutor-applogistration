@@ -1,0 +1,9 @@
+applogistration-job:
+  image: {{ DOCKER_REGISTRY }}muratp/applogistration
+  volumes:
+    - ../plugins/applogistration/apps/settings/tutor.py:/openedx/applogistration/applogistration/tutor.py
+  environment:
+    DJANGO_SETTINGS_MODULE: ${EDX_PLATFORM_SETTINGS:-tutor.production}
+  depends_on:
+    - lms
+    

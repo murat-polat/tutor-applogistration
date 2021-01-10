@@ -1,0 +1,2 @@
+recursive-include tutorapplogistration/patches *
+recursive-include tutorapplogistration/templates *
